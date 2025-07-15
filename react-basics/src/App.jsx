@@ -71,7 +71,7 @@ const App = () => {
           ) : (
             <ul>
               {movies.map((movie) => (
-                <MovieCard key={movie.id} title={movie.title} />
+                <MovieCard key={movie.id} movie={movie} />
               ))}
             </ul>
           )}
