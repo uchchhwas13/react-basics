@@ -60,6 +60,7 @@ function App() {
         await updateSearchCount(query, data.results[0]);
       }
     } catch (error) {
+      console.log("Erro: ", error);
       setErrorMessage("Failed to fetch movies. Please try again later.");
     } finally {
       setIsLoading(false);
